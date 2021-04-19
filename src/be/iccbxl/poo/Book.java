@@ -2,9 +2,10 @@ package be.iccbxl.poo;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.UUID;
 
 public class Book {
-	protected int id;
+	protected UUID id;
 	protected String title;
 	protected String author;
 	protected short totalPages;
@@ -14,7 +15,7 @@ public class Book {
 	protected String language;
 	protected Person borrower;
 	
-	public Book(int id, String title, String author, short totalPages, String language) {
+	public Book(UUID id, String title, String author, short totalPages, String language) {
 		this.id = id;
 		this.title = title;
 		this.author = author;
@@ -90,7 +91,7 @@ public class Book {
 		this.borrower = borrower;
 	}
 
-	public int getId() {
+	public UUID getId() {
 		return id;
 	}
 
